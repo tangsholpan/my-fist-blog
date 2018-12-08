@@ -1,0 +1,6 @@
+{% extends 'blog/base.html' %}
+    {% block content %}
+    New post
+        {% csrf_token %}
+        {{ form.as_p }}
+    {% endblock %}
